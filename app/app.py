@@ -13,6 +13,7 @@ from pathlib import Path
 
 import gradio as gr
 import torch
+from huggingface_hub import hf_hub_download
 from PIL import Image
 from transformers import AutoImageProcessor, AutoModel
 
@@ -20,7 +21,10 @@ sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 from model import DINOv3ConvNeXtClassifier
 
 CHECKPOINT = "facebook/dinov3-convnext-large-pretrain-lvd1689m"
-MODEL_PATH = os.environ.get("MODEL_PATH", "best_model.pth")
+# Set MODEL_REPO as a Space variable, e.g. "your-username/face-antispoofing"
+MODEL_REPO = os.environ.get("MODEL_REPO", "")
+MODEL_FILENAME = os.environ.get("MODEL_FILENAME", "best_model_dinov3_convnext.pth")
+HF_TOKEN = os.environ.get("HF_TOKEN", "")
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 LABEL_NAMES = ["fake_mannequin", "fake_mask", "fake_printed", "fake_screen", "fake_unknown", "realperson"]
@@ -36,18 +40,38 @@ TTA_SCALES = [224, 256, 288]
 TEMPERATURE = 1.0
 
 
+def resolve_model_path() -> str:
+    # Priority 1: local file (useful when running locally)
+    local = Path(MODEL_FILENAME)
+    if local.exists():
+        print(f"Using local weights: {local}")
+        return str(local)
+
+    # Priority 2: download from HuggingFace Hub
+    if MODEL_REPO:
+        print(f"Downloading weights from Hub: {MODEL_REPO}/{MODEL_FILENAME}")
+        return hf_hub_download(
+            repo_id=MODEL_REPO,
+            filename=MODEL_FILENAME,
+            token=HF_TOKEN or None,
+        )
+
+    raise FileNotFoundError(
+        "Model weights not found. Set MODEL_REPO env variable or place "
+        f"'{MODEL_FILENAME}' in the working directory."
+    )
+
+
 def load_model():
     id2label = {i: n for i, n in enumerate(LABEL_NAMES)}
     label2id = {n: i for i, n in id2label.items()}
-    processor = AutoImageProcessor.from_pretrained(CHECKPOINT)
-    backbone = AutoModel.from_pretrained(CHECKPOINT)
+    processor = AutoImageProcessor.from_pretrained(CHECKPOINT, token=HF_TOKEN or None)
+    backbone = AutoModel.from_pretrained(CHECKPOINT, token=HF_TOKEN or None)
     model = DINOv3ConvNeXtClassifier(backbone, len(LABEL_NAMES), id2label, label2id)
-    if Path(MODEL_PATH).exists():
-        state = torch.load(MODEL_PATH, map_location="cpu")
-        model.load_state_dict(state)
-        print(f"Loaded weights from {MODEL_PATH}")
-    else:
-        print(f"Warning: {MODEL_PATH} not found. Using random weights (demo only).")
+    weights_path = resolve_model_path()
+    state = torch.load(weights_path, map_location="cpu")
+    model.load_state_dict(state)
+    print("Weights loaded.")
     return model.to(DEVICE).eval(), processor
 
 
