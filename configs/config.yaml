@@ -1,0 +1,36 @@
+seed: 42
+
+model:
+  checkpoint: "facebook/dinov3-convnext-large-pretrain-lvd1689m"
+  num_classes: 6
+  hidden_dim: 1536
+  adapter_dropout: 0.1
+  head_dropout: 0.3
+
+data:
+  train_dir: "data/train"
+  clean_train_dir: "data/train_clean"
+  test_dir: "data/test"
+  misplaced_json: "misplaced_images.json"
+  val_split: 0.2
+
+training:
+  output_dir: "outputs"
+  epochs: 10
+  lr: 1.0e-5
+  lr_scheduler: "cosine"
+  warmup_steps: 50
+  batch_size: 32
+  weight_decay: 0.02
+  patience: 3
+  fp16: true
+
+loss:
+  focal_gamma: 2.0
+  label_smoothing: 0.05
+  class_weight_power: 0.4
+
+inference:
+  tta_scales: [224, 256, 288, 320, 384]
+  temperature: 1.0
+  batch_size: 16

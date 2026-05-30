@@ -1,0 +1,45 @@
+# Model weights — too large for git; host on HuggingFace Hub instead
+*.pth
+*.pt
+*.bin
+*.safetensors
+
+# Datasets and competition data
+data/
+*.csv
+!samplesubmission_example.csv
+
+# Kaggle working directory artifacts
+outputs/
+deduped_split/
+dedup_meta.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Original notebook at root (has exposed token) — cleaned version is in notebooks/
+/TheGacors.ipynb
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Environment & secrets — NEVER commit these
+.env
+.env.*
+secrets.yaml
+
+# IDE
+.vscode/
+.idea/

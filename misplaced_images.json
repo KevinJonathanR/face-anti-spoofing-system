@@ -1,0 +1,1535 @@
+[
+    {
+        "file_name": "screen_045.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_045.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_045.jpg"
+    },
+    {
+        "file_name": "screen_053.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_053.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_053.jpg"
+    },
+    {
+        "file_name": "screen_009.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_009.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_009.jpg"
+    },
+    {
+        "file_name": "screen_176.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_176.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_176.jpg"
+    },
+    {
+        "file_name": "screen_177.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_177.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_177.jpg"
+    },
+    {
+        "file_name": "screen_014.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_014.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_014.jpg"
+    },
+    {
+        "file_name": "screen_160.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_160.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_160.jpg"
+    },
+    {
+        "file_name": "screen_120.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_120.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_120.jpg"
+    },
+    {
+        "file_name": "screen_128.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_128.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_128.jpg"
+    },
+    {
+        "file_name": "screen_043.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_043.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_043.jpg"
+    },
+    {
+        "file_name": "screen_088.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_088.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_088.jpg"
+    },
+    {
+        "file_name": "screen_076.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_076.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_076.jpg"
+    },
+    {
+        "file_name": "screen_132.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_132.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_132.jpg"
+    },
+    {
+        "file_name": "screen_205.JPG",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_205.JPG",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_205.JPG"
+    },
+    {
+        "file_name": "screen_061.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_061.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_061.jpg"
+    },
+    {
+        "file_name": "screen_105.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_105.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_105.jpg"
+    },
+    {
+        "file_name": "screen_048.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_048.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_048.jpg"
+    },
+    {
+        "file_name": "screen_173.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_173.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_173.jpg"
+    },
+    {
+        "file_name": "screen_131.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_131.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_131.jpg"
+    },
+    {
+        "file_name": "screen_209.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_209.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_209.jpg"
+    },
+    {
+        "file_name": "screen_156.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_156.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_156.jpg"
+    },
+    {
+        "file_name": "screen_225.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_225.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_225.jpg"
+    },
+    {
+        "file_name": "screen_190.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_190.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_190.jpg"
+    },
+    {
+        "file_name": "screen_067.jpg",
+        "source_folder": "fake_mannequin",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/screen_067.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_067.jpg"
+    },
+    {
+        "file_name": "mask_246.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/mask_246.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_246.jpeg"
+    },
+    {
+        "file_name": "printed_009.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/printed_009.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_009.jpeg"
+    },
+    {
+        "file_name": "real_402.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_402.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_402.jpeg"
+    },
+    {
+        "file_name": "printed_015.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/printed_015.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_015.jpeg"
+    },
+    {
+        "file_name": "real_075.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_075.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_075.jpeg"
+    },
+    {
+        "file_name": "printed_007.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/printed_007.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_007.jpeg"
+    },
+    {
+        "file_name": "mask_018.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/mask_018.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_018.jpeg"
+    },
+    {
+        "file_name": "mannequin_205.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/mannequin_205.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_205.jpeg"
+    },
+    {
+        "file_name": "mannequin_171.jpg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/mannequin_171.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_171.jpg"
+    },
+    {
+        "file_name": "mask_204.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/mask_204.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_204.jpeg"
+    },
+    {
+        "file_name": "real_395.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_395.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_395.jpeg"
+    },
+    {
+        "file_name": "printed_020.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/printed_020.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_020.jpeg"
+    },
+    {
+        "file_name": "mannequin_060.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/mannequin_060.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_060.jpeg"
+    },
+    {
+        "file_name": "screen_216.jpg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/screen_216.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_216.jpg"
+    },
+    {
+        "file_name": "real_168.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_168.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_168.jpeg"
+    },
+    {
+        "file_name": "real_365.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_365.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_365.jpeg"
+    },
+    {
+        "file_name": "real_266.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_266.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_266.jpeg"
+    },
+    {
+        "file_name": "printed_034.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/printed_034.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_034.jpeg"
+    },
+    {
+        "file_name": "real_433.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_433.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_433.jpeg"
+    },
+    {
+        "file_name": "real_067.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_067.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_067.jpeg"
+    },
+    {
+        "file_name": "printed_082.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/printed_082.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_082.jpeg"
+    },
+    {
+        "file_name": "printed_099.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/printed_099.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_099.jpeg"
+    },
+    {
+        "file_name": "printed_073.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/printed_073.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_073.jpeg"
+    },
+    {
+        "file_name": "printed_081.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/printed_081.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_081.jpeg"
+    },
+    {
+        "file_name": "real_301.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_301.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_301.jpeg"
+    },
+    {
+        "file_name": "mannequin_193.jpg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/mannequin_193.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_193.jpg"
+    },
+    {
+        "file_name": "real_427.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_427.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_427.jpeg"
+    },
+    {
+        "file_name": "mannequin_081.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/mannequin_081.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_081.jpeg"
+    },
+    {
+        "file_name": "mannequin_056.jpg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/mannequin_056.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_056.jpg"
+    },
+    {
+        "file_name": "printed_072.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/printed_072.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_072.jpeg"
+    },
+    {
+        "file_name": "screen_097.jpg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/screen_097.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_097.jpg"
+    },
+    {
+        "file_name": "printed_012.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/printed_012.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_012.jpeg"
+    },
+    {
+        "file_name": "printed_071.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/printed_071.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_071.jpeg"
+    },
+    {
+        "file_name": "mannequin_200.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/mannequin_200.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_200.jpeg"
+    },
+    {
+        "file_name": "mannequin_073.png",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/mannequin_073.png",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_073.png"
+    },
+    {
+        "file_name": "real_185.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_185.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_185.jpeg"
+    },
+    {
+        "file_name": "mannequin_181.jpg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/mannequin_181.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_181.jpg"
+    },
+    {
+        "file_name": "real_170.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_170.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_170.jpeg"
+    },
+    {
+        "file_name": "real_437.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_437.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_437.jpeg"
+    },
+    {
+        "file_name": "screen_103.jpg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/screen_103.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_103.jpg"
+    },
+    {
+        "file_name": "printed_048.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/printed_048.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_048.jpeg"
+    },
+    {
+        "file_name": "real_187.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_187.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_187.jpeg"
+    },
+    {
+        "file_name": "real_192.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_192.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_192.jpeg"
+    },
+    {
+        "file_name": "printed_095.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/printed_095.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_095.jpeg"
+    },
+    {
+        "file_name": "real_294.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_294.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_294.jpeg"
+    },
+    {
+        "file_name": "real_438.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_438.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_438.jpeg"
+    },
+    {
+        "file_name": "mannequin_178.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/mannequin_178.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_178.jpeg"
+    },
+    {
+        "file_name": "mannequin_053.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/mannequin_053.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_053.jpeg"
+    },
+    {
+        "file_name": "printed_068.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/printed_068.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_068.jpeg"
+    },
+    {
+        "file_name": "printed_002.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/printed_002.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_002.jpeg"
+    },
+    {
+        "file_name": "real_354.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_354.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_354.jpeg"
+    },
+    {
+        "file_name": "mannequin_009.jpg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/mannequin_009.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_009.jpg"
+    },
+    {
+        "file_name": "mannequin_167.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/mannequin_167.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_167.jpeg"
+    },
+    {
+        "file_name": "mannequin_099.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/mannequin_099.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_099.jpeg"
+    },
+    {
+        "file_name": "printed_035.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/printed_035.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_035.jpeg"
+    },
+    {
+        "file_name": "real_087.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_087.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_087.jpeg"
+    },
+    {
+        "file_name": "mask_061.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/mask_061.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_061.jpeg"
+    },
+    {
+        "file_name": "printed_106.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/printed_106.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_106.jpeg"
+    },
+    {
+        "file_name": "mannequin_065.jpg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/mannequin_065.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_065.jpg"
+    },
+    {
+        "file_name": "screen_228.jpg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/screen_228.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_228.jpg"
+    },
+    {
+        "file_name": "real_349.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_349.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_349.jpeg"
+    },
+    {
+        "file_name": "printed_103.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/printed_103.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_103.jpeg"
+    },
+    {
+        "file_name": "mask_100.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/mask_100.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_100.jpeg"
+    },
+    {
+        "file_name": "real_043.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_043.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_043.jpeg"
+    },
+    {
+        "file_name": "real_448.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_448.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_448.jpeg"
+    },
+    {
+        "file_name": "real_283.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_283.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_283.jpeg"
+    },
+    {
+        "file_name": "mannequin_024.jpg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/mannequin_024.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_024.jpg"
+    },
+    {
+        "file_name": "printed_102.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/printed_102.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_102.jpeg"
+    },
+    {
+        "file_name": "printed_085.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/printed_085.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_085.jpeg"
+    },
+    {
+        "file_name": "real_409.jpeg",
+        "source_folder": "fake_unknown",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/real_409.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_409.jpeg"
+    },
+    {
+        "file_name": "unknown_070.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/unknown_070.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_070.jpg"
+    },
+    {
+        "file_name": "unknown_014.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/unknown_014.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_014.jpg"
+    },
+    {
+        "file_name": "mannequin_216.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/mannequin_216.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_216.jpg"
+    },
+    {
+        "file_name": "screen_022.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/screen_022.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_022.jpg"
+    },
+    {
+        "file_name": "screen_220.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/screen_220.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_220.jpg"
+    },
+    {
+        "file_name": "unknown_002.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/unknown_002.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_002.jpg"
+    },
+    {
+        "file_name": "mask_242.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/mask_242.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_242.jpg"
+    },
+    {
+        "file_name": "unknown_214.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/unknown_214.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_214.jpg"
+    },
+    {
+        "file_name": "unknown_326.jpeg",
+        "source_folder": "realperson",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/unknown_326.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_326.jpeg"
+    },
+    {
+        "file_name": "screen_084.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/screen_084.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_084.jpg"
+    },
+    {
+        "file_name": "unknown_136.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/unknown_136.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_136.jpg"
+    },
+    {
+        "file_name": "screen_012.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/screen_012.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_012.jpg"
+    },
+    {
+        "file_name": "unknown_280.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/unknown_280.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_280.jpg"
+    },
+    {
+        "file_name": "unknown_260.jpeg",
+        "source_folder": "realperson",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/unknown_260.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_260.jpeg"
+    },
+    {
+        "file_name": "unknown_081.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/unknown_081.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_081.jpg"
+    },
+    {
+        "file_name": "mannequin_029.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/mannequin_029.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_029.jpg"
+    },
+    {
+        "file_name": "mannequin_137.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/mannequin_137.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_137.jpg"
+    },
+    {
+        "file_name": "screen_020.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/screen_020.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_020.jpg"
+    },
+    {
+        "file_name": "screen_217.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/screen_217.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_217.jpg"
+    },
+    {
+        "file_name": "unknown_240.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/unknown_240.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_240.jpg"
+    },
+    {
+        "file_name": "screen_168.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/screen_168.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_168.jpg"
+    },
+    {
+        "file_name": "unknown_030.jpeg",
+        "source_folder": "realperson",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/unknown_030.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_030.jpeg"
+    },
+    {
+        "file_name": "screen_018.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/screen_018.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_018.jpg"
+    },
+    {
+        "file_name": "unknown_004.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/unknown_004.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_004.jpg"
+    },
+    {
+        "file_name": "unknown_099.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/unknown_099.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_099.jpg"
+    },
+    {
+        "file_name": "screen_148.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/screen_148.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_148.jpg"
+    },
+    {
+        "file_name": "screen_041.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/screen_041.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_041.jpg"
+    },
+    {
+        "file_name": "screen_050.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/screen_050.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_050.jpg"
+    },
+    {
+        "file_name": "screen_044.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/screen_044.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_044.jpg"
+    },
+    {
+        "file_name": "unknown_331.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/unknown_331.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_331.jpg"
+    },
+    {
+        "file_name": "unknown_082.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/unknown_082.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_082.jpg"
+    },
+    {
+        "file_name": "unknown_239.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/unknown_239.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_239.jpg"
+    },
+    {
+        "file_name": "unknown_233.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/unknown_233.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_233.jpg"
+    },
+    {
+        "file_name": "mask_203.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/mask_203.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_203.jpg"
+    },
+    {
+        "file_name": "unknown_224.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/unknown_224.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_224.jpg"
+    },
+    {
+        "file_name": "mask_233.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/mask_233.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_233.jpg"
+    },
+    {
+        "file_name": "screen_057.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_screen",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/screen_057.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/screen_057.jpg"
+    },
+    {
+        "file_name": "unknown_291.jpg",
+        "source_folder": "realperson",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/unknown_291.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_291.jpg"
+    },
+    {
+        "file_name": "real_346.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/real_346.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_346.jpg"
+    },
+    {
+        "file_name": "mannequin_051.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mannequin_051.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_051.jpg"
+    },
+    {
+        "file_name": "unknown_005.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/unknown_005.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_005.jpg"
+    },
+    {
+        "file_name": "unknown_278.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/unknown_278.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_278.jpg"
+    },
+    {
+        "file_name": "real_166.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/real_166.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_166.jpg"
+    },
+    {
+        "file_name": "mannequin_218.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mannequin_218.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_218.jpg"
+    },
+    {
+        "file_name": "mannequin_002.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mannequin_002.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_002.jpg"
+    },
+    {
+        "file_name": "unknown_051.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/unknown_051.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_051.jpg"
+    },
+    {
+        "file_name": "printed_075.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/printed_075.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_075.jpg"
+    },
+    {
+        "file_name": "unknown_222.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/unknown_222.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_222.jpg"
+    },
+    {
+        "file_name": "mannequin_013.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mannequin_013.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_013.jpg"
+    },
+    {
+        "file_name": "unknown_314.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/unknown_314.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_314.jpg"
+    },
+    {
+        "file_name": "unknown_163.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/unknown_163.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_163.jpg"
+    },
+    {
+        "file_name": "mannequin_191.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mannequin_191.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_191.jpg"
+    },
+    {
+        "file_name": "mannequin_158.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mannequin_158.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_158.jpg"
+    },
+    {
+        "file_name": "real_094.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/real_094.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_094.jpg"
+    },
+    {
+        "file_name": "real_414.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/real_414.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_414.jpg"
+    },
+    {
+        "file_name": "mannequin_119.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mannequin_119.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_119.jpg"
+    },
+    {
+        "file_name": "printed_080.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "fake_printed",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/printed_080.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/printed_080.jpg"
+    },
+    {
+        "file_name": "unknown_064.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/unknown_064.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_064.jpg"
+    },
+    {
+        "file_name": "real_435.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/real_435.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_435.jpg"
+    },
+    {
+        "file_name": "mannequin_007.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mannequin_007.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_007.jpg"
+    },
+    {
+        "file_name": "unknown_236.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/unknown_236.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_236.jpg"
+    },
+    {
+        "file_name": "unknown_080.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/unknown_080.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_080.jpg"
+    },
+    {
+        "file_name": "real_260.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/real_260.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_260.jpg"
+    },
+    {
+        "file_name": "real_181.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/real_181.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_181.jpg"
+    },
+    {
+        "file_name": "unknown_292.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/unknown_292.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_292.jpg"
+    },
+    {
+        "file_name": "unknown_336.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/unknown_336.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_336.jpg"
+    },
+    {
+        "file_name": "unknown_235.jpg",
+        "source_folder": "fake_mask",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/unknown_235.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_235.jpg"
+    },
+    {
+        "file_name": "real_298.jpg",
+        "source_folder": "fake_screen",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/real_298.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_298.jpg"
+    },
+    {
+        "file_name": "real_456.jpg",
+        "source_folder": "fake_screen",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/real_456.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_456.jpg"
+    },
+    {
+        "file_name": "real_330.jpg",
+        "source_folder": "fake_screen",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/real_330.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_330.jpg"
+    },
+    {
+        "file_name": "real_110.jpg",
+        "source_folder": "fake_screen",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/real_110.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_110.jpg"
+    },
+    {
+        "file_name": "real_447.jpg",
+        "source_folder": "fake_screen",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/real_447.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_447.jpg"
+    },
+    {
+        "file_name": "real_010.jpg",
+        "source_folder": "fake_screen",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/real_010.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_010.jpg"
+    },
+    {
+        "file_name": "real_388.jpg",
+        "source_folder": "fake_screen",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/real_388.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_388.jpg"
+    },
+    {
+        "file_name": "real_018.jpg",
+        "source_folder": "fake_screen",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/real_018.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_018.jpg"
+    },
+    {
+        "file_name": "real_272.jpg",
+        "source_folder": "fake_screen",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/real_272.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_272.jpg"
+    },
+    {
+        "file_name": "real_457.jpg",
+        "source_folder": "fake_screen",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/real_457.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_457.jpg"
+    },
+    {
+        "file_name": "real_139.jpg",
+        "source_folder": "fake_screen",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/real_139.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_139.jpg"
+    },
+    {
+        "file_name": "real_357.jpg",
+        "source_folder": "fake_screen",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_screen/real_357.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_357.jpg"
+    },
+    {
+        "file_name": "mask_150.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mask_150.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_150.jpg"
+    },
+    {
+        "file_name": "mask_134.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mask_134.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_134.jpg"
+    },
+    {
+        "file_name": "unknown_264.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/unknown_264.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_264.jpg"
+    },
+    {
+        "file_name": "unknown_026.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/unknown_026.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_026.jpg"
+    },
+    {
+        "file_name": "mask_259.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mask_259.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_259.jpg"
+    },
+    {
+        "file_name": "mask_055.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mask_055.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_055.jpg"
+    },
+    {
+        "file_name": "mask_009.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mask_009.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_009.jpg"
+    },
+    {
+        "file_name": "real_233.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/real_233.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_233.jpg"
+    },
+    {
+        "file_name": "mask_053.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mask_053.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_053.jpg"
+    },
+    {
+        "file_name": "real_071.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/real_071.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_071.jpg"
+    },
+    {
+        "file_name": "mask_123.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mask_123.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_123.jpg"
+    },
+    {
+        "file_name": "mask_193.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mask_193.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_193.jpg"
+    },
+    {
+        "file_name": "real_251.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/real_251.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_251.jpg"
+    },
+    {
+        "file_name": "mask_037.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mask_037.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_037.jpg"
+    },
+    {
+        "file_name": "mannequin_146.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mannequin_146.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_146.jpg"
+    },
+    {
+        "file_name": "mask_103.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mask_103.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_103.jpg"
+    },
+    {
+        "file_name": "mannequin_069.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mannequin_069.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_069.jpg"
+    },
+    {
+        "file_name": "mannequin_122.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mannequin_122.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_122.jpg"
+    },
+    {
+        "file_name": "real_197.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/real_197.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_197.jpg"
+    },
+    {
+        "file_name": "mask_223.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mask_223.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_223.jpg"
+    },
+    {
+        "file_name": "mannequin_192.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mannequin_192.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_192.jpg"
+    },
+    {
+        "file_name": "real_201.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/real_201.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_201.jpg"
+    },
+    {
+        "file_name": "mannequin_215.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mannequin_215.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_215.jpg"
+    },
+    {
+        "file_name": "real_317.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/real_317.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_317.jpg"
+    },
+    {
+        "file_name": "mannequin_061.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mannequin_061.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_061.jpg"
+    },
+    {
+        "file_name": "unknown_332.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/unknown_332.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_332.jpg"
+    },
+    {
+        "file_name": "mask_107.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mask_107.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_107.jpg"
+    },
+    {
+        "file_name": "mannequin_047.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mannequin_047.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_047.jpg"
+    },
+    {
+        "file_name": "mask_257.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mask_257.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_257.jpg"
+    },
+    {
+        "file_name": "mannequin_127.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mannequin_127.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_127.jpg"
+    },
+    {
+        "file_name": "unknown_225.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/unknown_225.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_225.jpg"
+    },
+    {
+        "file_name": "real_237.jpeg",
+        "source_folder": "fake_printed",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/real_237.jpeg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_237.jpeg"
+    },
+    {
+        "file_name": "unknown_027.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/unknown_027.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_027.jpg"
+    },
+    {
+        "file_name": "mask_247.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mask_247.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_247.jpg"
+    },
+    {
+        "file_name": "mask_017.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mask_017.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_017.jpg"
+    },
+    {
+        "file_name": "mask_176.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mask_176.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_176.jpg"
+    },
+    {
+        "file_name": "mask_040.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mask_040.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_040.jpg"
+    },
+    {
+        "file_name": "mask_198.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mask_198.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_198.jpg"
+    },
+    {
+        "file_name": "mask_197.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mask_197.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_197.jpg"
+    },
+    {
+        "file_name": "unknown_290.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_unknown",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/unknown_290.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_unknown/unknown_290.jpg"
+    },
+    {
+        "file_name": "real_132.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/real_132.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_132.jpg"
+    },
+    {
+        "file_name": "mask_249.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mask_249.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_249.jpg"
+    },
+    {
+        "file_name": "real_382.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/real_382.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_382.jpg"
+    },
+    {
+        "file_name": "mannequin_104.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mannequin",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mannequin_104.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mannequin/mannequin_104.jpg"
+    },
+    {
+        "file_name": "mask_192.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "fake_mask",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/mask_192.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_mask/mask_192.jpg"
+    },
+    {
+        "file_name": "real_422.jpg",
+        "source_folder": "fake_printed",
+        "target_folder": "realperson",
+        "source_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/fake_printed/real_422.jpg",
+        "target_path": "/kaggle/working/data/dataset_extracted/cropped_dataset/train_no_yolo/realperson/real_422.jpg"
+    }
+]
