@@ -6,6 +6,22 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://python.org)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange)](https://pytorch.org)
 [![HuggingFace](https://img.shields.io/badge/🤗-Transformers-yellow)](https://huggingface.co)
+[![Demo](https://img.shields.io/badge/🚀_Live_Demo-HuggingFace_Spaces-blue)](https://huggingface.co/spaces/<your-username>/face-anti-spoofing)
+
+---
+
+## Live Demo
+
+**→ [Try it on HuggingFace Spaces](https://huggingface.co/spaces/<your-username>/face-anti-spoofing)**
+
+Upload any face image to detect whether it's a real person or a spoofing attack — no setup needed.
+
+To run locally:
+
+```bash
+pip install -r app/requirements.txt
+MODEL_PATH=best_model.pth python app/app.py
+```
 
 ---
 
@@ -141,21 +157,6 @@ python src/inference.py \
     --test-dir data/test \
     --sample-sub samplesubmission.csv \
     --output submission.csv
-```
-
----
-
-## Live Demo
-
-The model is deployed as an interactive Gradio app on HuggingFace Spaces.
-
-**→ [Try the live demo](https://huggingface.co/spaces/<your-username>/face-anti-spoofing)**
-
-To run locally:
-
-```bash
-pip install -r app/requirements.txt
-MODEL_PATH=best_model.pth python app/app.py
 ```
 
 ---
