@@ -131,7 +131,7 @@ demo = gr.Interface(
         "**Classes**: Real Person · Mannequin · Mask · Printed Photo · Screen Replay · Unknown\n\n"
         "Built for FIND IT DAC UGM 2026 | Team The Gacors\n\n"
         "---\n"
-        "💡 *Click any example below to try it instantly.*"
+        "💡 *Click any example below to try it instantly. or you can upload your own image.*"
     ),
     examples=available_examples if available_examples else None,
     example_labels=available_labels if available_labels else None,
