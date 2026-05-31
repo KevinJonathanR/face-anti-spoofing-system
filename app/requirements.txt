@@ -1,6 +1,6 @@
 gradio>=4.0.0
 torch>=2.0.0
 torchvision>=0.15.0
-transformers>=4.40.0
+transformers>=4.56.0
 huggingface_hub>=0.22.0
 Pillow>=9.0.0

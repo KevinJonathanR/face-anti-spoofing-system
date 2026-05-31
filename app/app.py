@@ -13,19 +13,25 @@ from pathlib import Path
 
 import gradio as gr
 import torch
-from huggingface_hub import hf_hub_download
+import torchvision.transforms as T
+from huggingface_hub import hf_hub_download, login
 from PIL import Image
-from transformers import AutoImageProcessor, AutoModel
+from transformers import AutoConfig, AutoModel
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 from model import DINOv3ConvNeXtClassifier
 
-CHECKPOINT = "facebook/dinov3-convnext-large-pretrain-lvd1689m"
-# Set MODEL_REPO as a Space variable, e.g. "your-username/face-antispoofing"
+# MODEL_REPO must be set as a Space variable, e.g. "your-username/face-antispoofing"
+# It should contain: config.json (backbone architecture) + best_model_dinov3_convnext.pth
 MODEL_REPO = os.environ.get("MODEL_REPO", "")
 MODEL_FILENAME = os.environ.get("MODEL_FILENAME", "best_model_dinov3_convnext.pth")
 HF_TOKEN = os.environ.get("HF_TOKEN", "")
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+
+if HF_TOKEN:
+    login(token=HF_TOKEN)
+else:
+    print("Warning: HF_TOKEN not set.")
 
 LABEL_NAMES = ["fake_mannequin", "fake_mask", "fake_printed", "fake_screen", "fake_unknown", "realperson"]
 LABEL_DISPLAY = {
@@ -39,15 +45,27 @@ LABEL_DISPLAY = {
 TTA_SCALES = [224, 256, 288]
 TEMPERATURE = 1.0
 
+# Processor parameters are fixed from the DINOv3 preprocessor_config.json:
+# size=224, mean/std = ImageNet defaults. Hardcoded to avoid fetching the
+# gated model's config file from Hub on every Space startup.
+_IMAGE_SIZE = 224
+_MEAN = [0.485, 0.456, 0.406]
+_STD  = [0.229, 0.224, 0.225]
+
+def _make_transform(size: int) -> T.Compose:
+    return T.Compose([
+        T.Resize((size, size)),
+        T.ToTensor(),
+        T.Normalize(mean=_MEAN, std=_STD),
+    ])
+
 
 def resolve_model_path() -> str:
-    # Priority 1: local file (useful when running locally)
     local = Path(MODEL_FILENAME)
     if local.exists():
         print(f"Using local weights: {local}")
         return str(local)
 
-    # Priority 2: download from HuggingFace Hub
     if MODEL_REPO:
         print(f"Downloading weights from Hub: {MODEL_REPO}/{MODEL_FILENAME}")
         return hf_hub_download(
@@ -62,20 +80,49 @@ def resolve_model_path() -> str:
     )
 
 
+def load_backbone_config():
+    """
+    Load backbone config with no outbound network calls.
+    Priority:
+      1. config.json next to app.py  (uploaded directly to the Space)
+      2. MODEL_REPO on HuggingFace Hub (fallback, requires network)
+    """
+    local_config = Path(__file__).parent / "config.json"
+    if local_config.exists():
+        print(f"Loading backbone config from local file: {local_config}")
+        return AutoConfig.from_pretrained(str(local_config.parent), trust_remote_code=True)
+
+    if MODEL_REPO:
+        print(f"Loading backbone config from Hub: {MODEL_REPO}")
+        return AutoConfig.from_pretrained(MODEL_REPO, token=HF_TOKEN or None, trust_remote_code=True)
+
+    raise FileNotFoundError(
+        "config.json not found locally and MODEL_REPO is not set. "
+        "Upload config.json to the Space or set MODEL_REPO."
+    )
+
+
 def load_model():
     id2label = {i: n for i, n in enumerate(LABEL_NAMES)}
     label2id = {n: i for i, n in id2label.items()}
-    processor = AutoImageProcessor.from_pretrained(CHECKPOINT, token=HF_TOKEN or None)
-    backbone = AutoModel.from_pretrained(CHECKPOINT, token=HF_TOKEN or None)
+
+    config = load_backbone_config()
+    backbone = AutoModel.from_config(config, trust_remote_code=True)
+
     model = DINOv3ConvNeXtClassifier(backbone, len(LABEL_NAMES), id2label, label2id)
+
     weights_path = resolve_model_path()
     state = torch.load(weights_path, map_location="cpu")
-    model.load_state_dict(state)
-    print("Weights loaded.")
-    return model.to(DEVICE).eval(), processor
+    missing, unexpected = model.load_state_dict(state, strict=False)
+    if unexpected:
+        print(f"Ignored keys (not needed at inference): {unexpected}")
+    if missing:
+        print(f"Warning - missing keys: {missing}")
+    print("All weights loaded.")
+    return model.to(DEVICE).eval()
 
 
-model, processor = load_model()
+model = load_model()
 
 
 @torch.no_grad()
@@ -88,15 +135,17 @@ def predict(image: Image.Image) -> dict:
     count = 0
 
     for size in TTA_SCALES:
+        transform = _make_transform(size)
         resized = image.resize((size, size))
-        inp = processor(images=[resized], return_tensors="pt").to(DEVICE)
-        p = torch.softmax(model(**inp)["logits"] / TEMPERATURE, dim=-1)[0]
+
+        inp = transform(resized).unsqueeze(0).to(DEVICE)
+        p = torch.softmax(model(pixel_values=inp)["logits"] / TEMPERATURE, dim=-1)[0]
         probs_tta = p if probs_tta is None else probs_tta + p
         count += 1
 
         flipped = resized.transpose(Image.FLIP_LEFT_RIGHT)
-        inp_f = processor(images=[flipped], return_tensors="pt").to(DEVICE)
-        p_f = torch.softmax(model(**inp_f)["logits"] / TEMPERATURE, dim=-1)[0]
+        inp_f = transform(flipped).unsqueeze(0).to(DEVICE)
+        p_f = torch.softmax(model(pixel_values=inp_f)["logits"] / TEMPERATURE, dim=-1)[0]
         probs_tta = probs_tta + p_f
         count += 1
 
