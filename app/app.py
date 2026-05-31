@@ -8,7 +8,6 @@ To run locally:
 """
 
 import os
-import sys
 from pathlib import Path
 
 import gradio as gr
@@ -16,39 +15,28 @@ import torch
 import torchvision.transforms as T
 from huggingface_hub import hf_hub_download, login
 from PIL import Image
-from transformers import AutoConfig, AutoModel
 
-sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
-from model import DINOv3ConvNeXtClassifier
-
-# MODEL_REPO must be set as a Space variable, e.g. "your-username/face-antispoofing"
-# It should contain: config.json (backbone architecture) + best_model_dinov3_convnext.pth
-MODEL_REPO = os.environ.get("MODEL_REPO", "")
-MODEL_FILENAME = os.environ.get("MODEL_FILENAME", "best_model_dinov3_convnext.pth")
-HF_TOKEN = os.environ.get("HF_TOKEN", "")
-DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+MODEL_REPO     = os.environ.get("MODEL_REPO", "")
+MODEL_FILENAME = os.environ.get("MODEL_FILENAME", "model_traced.pt")
+HF_TOKEN       = os.environ.get("HF_TOKEN", "")
+DEVICE         = "cuda" if torch.cuda.is_available() else "cpu"
 
 if HF_TOKEN:
     login(token=HF_TOKEN)
-else:
-    print("Warning: HF_TOKEN not set.")
 
 LABEL_NAMES = ["fake_mannequin", "fake_mask", "fake_printed", "fake_screen", "fake_unknown", "realperson"]
 LABEL_DISPLAY = {
     "fake_mannequin": "Mannequin Attack",
-    "fake_mask": "Mask Attack",
-    "fake_printed": "Printed Photo Attack",
-    "fake_screen": "Screen Replay Attack",
-    "fake_unknown": "Unknown Attack",
-    "realperson": "Real Person",
+    "fake_mask":      "Mask Attack",
+    "fake_printed":   "Printed Photo Attack",
+    "fake_screen":    "Screen Replay Attack",
+    "fake_unknown":   "Unknown Attack",
+    "realperson":     "Real Person",
 }
-TTA_SCALES = [224, 256, 288]
+TTA_SCALES  = [224, 256, 288]
 TEMPERATURE = 1.0
 
-# Processor parameters are fixed from the DINOv3 preprocessor_config.json:
-# size=224, mean/std = ImageNet defaults. Hardcoded to avoid fetching the
-# gated model's config file from Hub on every Space startup.
-_IMAGE_SIZE = 224
+# Processor params from DINOv3 preprocessor_config.json (hardcoded to avoid Hub download)
 _MEAN = [0.485, 0.456, 0.406]
 _STD  = [0.229, 0.224, 0.225]
 
@@ -63,63 +51,22 @@ def _make_transform(size: int) -> T.Compose:
 def resolve_model_path() -> str:
     local = Path(MODEL_FILENAME)
     if local.exists():
-        print(f"Using local weights: {local}")
+        print(f"Using local model: {local}")
         return str(local)
-
     if MODEL_REPO:
-        print(f"Downloading weights from Hub: {MODEL_REPO}/{MODEL_FILENAME}")
-        return hf_hub_download(
-            repo_id=MODEL_REPO,
-            filename=MODEL_FILENAME,
-            token=HF_TOKEN or None,
-        )
-
+        print(f"Downloading model from Hub: {MODEL_REPO}/{MODEL_FILENAME}")
+        return hf_hub_download(repo_id=MODEL_REPO, filename=MODEL_FILENAME, token=HF_TOKEN or None)
     raise FileNotFoundError(
-        "Model weights not found. Set MODEL_REPO env variable or place "
-        f"'{MODEL_FILENAME}' in the working directory."
+        f"'{MODEL_FILENAME}' not found locally and MODEL_REPO is not set."
     )
 
 
-def load_backbone_config():
-    """
-    Load backbone config with no outbound network calls.
-    Priority:
-      1. config.json next to app.py  (uploaded directly to the Space)
-      2. MODEL_REPO on HuggingFace Hub (fallback, requires network)
-    """
-    local_config = Path(__file__).parent / "config.json"
-    if local_config.exists():
-        print(f"Loading backbone config from local file: {local_config}")
-        return AutoConfig.from_pretrained(str(local_config.parent), trust_remote_code=True)
-
-    if MODEL_REPO:
-        print(f"Loading backbone config from Hub: {MODEL_REPO}")
-        return AutoConfig.from_pretrained(MODEL_REPO, token=HF_TOKEN or None, trust_remote_code=True)
-
-    raise FileNotFoundError(
-        "config.json not found locally and MODEL_REPO is not set. "
-        "Upload config.json to the Space or set MODEL_REPO."
-    )
-
-
-def load_model():
-    id2label = {i: n for i, n in enumerate(LABEL_NAMES)}
-    label2id = {n: i for i, n in id2label.items()}
-
-    config = load_backbone_config()
-    backbone = AutoModel.from_config(config, trust_remote_code=True)
-
-    model = DINOv3ConvNeXtClassifier(backbone, len(LABEL_NAMES), id2label, label2id)
-
-    weights_path = resolve_model_path()
-    state = torch.load(weights_path, map_location="cpu")
-    missing, unexpected = model.load_state_dict(state, strict=False)
-    if unexpected:
-        print(f"Ignored keys (not needed at inference): {unexpected}")
-    if missing:
-        print(f"Warning - missing keys: {missing}")
-    print("All weights loaded.")
-    return model.to(DEVICE).eval()
+def load_model() -> torch.jit.ScriptModule:
+    path = resolve_model_path()
+    model = torch.jit.load(path, map_location=DEVICE)
+    model.eval()
+    print("TorchScript model loaded.")
+    return model
 
 
 model = load_model()
@@ -139,13 +86,13 @@ def predict(image: Image.Image) -> dict:
         resized = image.resize((size, size))
 
         inp = transform(resized).unsqueeze(0).to(DEVICE)
-        p = torch.softmax(model(pixel_values=inp)["logits"] / TEMPERATURE, dim=-1)[0]
+        p = torch.softmax(model(inp) / TEMPERATURE, dim=-1)[0]
         probs_tta = p if probs_tta is None else probs_tta + p
         count += 1
 
         flipped = resized.transpose(Image.FLIP_LEFT_RIGHT)
         inp_f = transform(flipped).unsqueeze(0).to(DEVICE)
-        p_f = torch.softmax(model(pixel_values=inp_f)["logits"] / TEMPERATURE, dim=-1)[0]
+        p_f = torch.softmax(model(inp_f) / TEMPERATURE, dim=-1)[0]
         probs_tta = probs_tta + p_f
         count += 1
 
@@ -153,9 +100,24 @@ def predict(image: Image.Image) -> dict:
     return {LABEL_DISPLAY[LABEL_NAMES[i]]: round(probs[i], 4) for i in range(len(LABEL_NAMES))}
 
 
-examples = [
-    ["assets/example_real.jpg"],
-    ["assets/example_printed.jpg"],
+EXAMPLES_DIR = Path(__file__).parent / "examples"
+CLASS_EXAMPLES = [
+    ("realperson.jpg",     "Real Person"),
+    ("fake_mask.jpg",      "Mask Attack"),
+    ("fake_printed.jpg",   "Printed Photo Attack"),
+    ("fake_screen.jpg",    "Screen Replay Attack"),
+    ("fake_mannequin.jpg", "Mannequin Attack"),
+    ("fake_unknown.jpg",   "Unknown Attack"),
+]
+available_examples = [
+    [str(EXAMPLES_DIR / fname)]
+    for fname, _ in CLASS_EXAMPLES
+    if (EXAMPLES_DIR / fname).exists()
+]
+available_labels = [
+    label
+    for fname, label in CLASS_EXAMPLES
+    if (EXAMPLES_DIR / fname).exists()
 ]
 
 demo = gr.Interface(
@@ -164,13 +126,17 @@ demo = gr.Interface(
     outputs=gr.Label(num_top_classes=6, label="Prediction"),
     title="Face Anti-Spoofing System",
     description=(
-        "Upload a face image to detect spoofing attacks.\n\n"
-        "**Model**: DINOv3 ConvNeXt-Large + Custom Adapter\n"
-        "**Classes**: Real Person vs. Mannequin / Mask / Printed / Screen / Unknown attack\n\n"
-        "Built for FIND IT DAC UGM 2026 | Team The Gacors"
+        "Upload a face image to detect whether it's a **real person** or a spoofing attack.\n\n"
+        "**Model**: DINOv3 ConvNeXt-Large + Custom Residual Adapter\n"
+        "**Classes**: Real Person · Mannequin · Mask · Printed Photo · Screen Replay · Unknown\n\n"
+        "Built for FIND IT DAC UGM 2026 | Team The Gacors\n\n"
+        "---\n"
+        "💡 *Click any example below to try it instantly.*"
     ),
-    examples=examples if any(Path(e[0]).exists() for e in examples) else None,
+    examples=available_examples if available_examples else None,
+    example_labels=available_labels if available_labels else None,
     flagging_mode="never",
+    cache_examples=False,
 )
 
 if __name__ == "__main__":
