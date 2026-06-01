@@ -134,6 +134,17 @@ demo = gr.Interface(
     ),
     examples=available_examples if available_examples else None,
     example_labels=available_labels if available_labels else None,
+    article=(
+        "### Class Guide — What image to upload?\n\n"
+        "| Class | What it looks like |\n"
+        "|---|---|\n"
+        "| 🟢 **Real Person** | A genuine selfie or live face photo |\n"
+        "| 🖨️ **Printed Photo** | A printed photo held in front of the camera — including ID cards |\n"
+        "| 🖥️ **Screen Replay** | A face displayed on a phone screen, monitor, or tablet |\n"
+        "| 🎭 **Mask Attack** | A person wearing a printed face mask or physical face cover |\n"
+        "| 🪆 **Mannequin** | A photo of a mannequin, doll, or face sculpture |\n"
+        "| 🎨 **Unknown** | Other spoofing methods — e.g., painting, sketch, or digital illustration |\n"
+    ),
     flagging_mode="never",
     cache_examples=False,
 )
