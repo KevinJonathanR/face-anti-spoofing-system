@@ -114,27 +114,38 @@ available_examples = [
     for fname, _ in CLASS_EXAMPLES
     if (EXAMPLES_DIR / fname).exists()
 ]
-available_labels = [
-    label
-    for fname, label in CLASS_EXAMPLES
-    if (EXAMPLES_DIR / fname).exists()
-]
 
-demo = gr.Interface(
-    fn=predict,
-    inputs=gr.Image(type="pil", label="Upload Face Image"),
-    outputs=gr.Label(num_top_classes=6, label="Prediction"),
-    title="Face Anti-Spoofing · Liveness Detection",
-    description=(
+# render=False defers placement so gr.Examples can be rendered above the upload box
+img_input    = gr.Image(type="pil", label="Upload Face Image", render=False)
+label_output = gr.Label(num_top_classes=6, label="Prediction", render=False)
+
+with gr.Blocks(title="Face Anti-Spoofing · Liveness Detection") as demo:
+    gr.Markdown(
+        "# Face Anti-Spoofing · Liveness Detection\n\n"
         "Detects whether a face is **real** or a presentation attack "
         "(printed photo, screen replay, mask, mannequin).\n\n"
-        "**Model** — DINOv3 ConvNeXt-Large · Focal Loss · Domain Augmentation\n\n"
-        "**96.6% accuracy · 96.1% macro F1** — FIND IT DAC UGM 2026 · Top 13 · Team The Gacors\n\n"
         "💡 Click an example below or upload your own image."
-    ),
-    examples=available_examples if available_examples else None,
-    example_labels=available_labels if available_labels else None,
-    article=(
+    )
+
+    if available_examples:
+        gr.Examples(
+            examples=available_examples,
+            inputs=img_input,
+            label="Examples — click to try",
+            examples_per_page=6,
+        )
+
+    with gr.Row():
+        img_input.render()
+        label_output.render()
+
+    with gr.Row():
+        gr.ClearButton([img_input, label_output], value="Clear")
+        submit_btn = gr.Button("Submit", variant="primary")
+
+    submit_btn.click(fn=predict, inputs=img_input, outputs=label_output)
+
+    gr.Markdown(
         "### Class Guide — What image to upload?\n\n"
         "| Class | What it looks like |\n"
         "|---|---|\n"
@@ -144,10 +155,7 @@ demo = gr.Interface(
         "| 🎭 **Mask Attack** | A person wearing a printed face mask or physical face cover |\n"
         "| 🪆 **Mannequin** | A photo of a mannequin, doll, or face sculpture |\n"
         "| 🎨 **Unknown** | Other spoofing methods — e.g., painting, sketch, or digital illustration |\n"
-    ),
-    flagging_mode="never",
-    cache_examples=False,
-)
+    )
 
 if __name__ == "__main__":
     demo.launch(share=False)
