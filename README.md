@@ -1,62 +1,54 @@
 # Face Anti-Spoofing System
 
-> **FIND IT DAC UGM 2026** | Team The Gacors  
-> 6-class face liveness detection using DINOv3 ConvNeXt-Large
+> 6-class face liveness detection · DINOv3 ConvNeXt-Large · **96.6% accuracy**
 
+[![Demo](https://img.shields.io/badge/🚀_Live_Demo-HuggingFace_Spaces-orange)](https://huggingface.co/spaces/KevinJonathanR/face-anti-spoofing-system)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://python.org)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange)](https://pytorch.org)
-[![HuggingFace](https://img.shields.io/badge/🤗-Transformers-yellow)](https://huggingface.co)
-[![Demo](https://img.shields.io/badge/🚀_Live_Demo-HuggingFace_Spaces-blue)](https://huggingface.co/spaces/<your-username>/face-anti-spoofing)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-ee4c2c)](https://pytorch.org)
+[![HuggingFace](https://img.shields.io/badge/🤗_Transformers-4.56%2B-yellow)](https://huggingface.co)
 
 ---
 
 ## Live Demo
 
-**→ [Try it on HuggingFace Spaces](https://huggingface.co/spaces/<your-username>/face-anti-spoofing)**
+**→ [Try it on HuggingFace Spaces](https://huggingface.co/spaces/KevinJonathanR/face-anti-spoofing-system)**
 
-Upload any face image to detect whether it's a real person or a spoofing attack — no setup needed.
-
-To run locally:
-
-```bash
-pip install -r app/requirements.txt
-MODEL_PATH=best_model.pth python app/app.py
-```
-
----
-
-## Overview
-
-This project develops a face anti-spoofing model that distinguishes between a **real face** and various **presentation attacks** in images. The system was built for the Data Analytics Competition FIND IT UGM 2026.
-
-**Task**: 6-class image classification
-
-| Class | Description |
-|---|---|
-| `realperson` | Genuine face |
-| `fake_mannequin` | 3D mannequin / doll attack |
-| `fake_mask` | Physical face mask |
-| `fake_printed` | Printed photo attack |
-| `fake_screen` | Screen replay / digital photo |
-| `fake_unknown` | Other / unknown spoofing method |
-
-**Validation Results**
+Upload any face image — the model instantly classifies it as a real person or one of 5 spoofing attack types.
 
 | Metric | Score |
 |---|---|
 | Accuracy | **96.6%** |
 | Macro F1 | **96.1%** |
 
+> Built for **FIND IT DAC UGM 2026** (national data analytics competition) — **Top 13 finish**.
+
 ---
 
-## Model Architecture
+## What It Does
+
+Face anti-spoofing detects **presentation attacks**: attempts to fool a face recognition system using a printed photo, screen replay, mask, or mannequin instead of a real face. This is a core security component in access control and identity verification systems.
+
+**6 classes:**
+
+| Class | Description |
+|---|---|
+| `realperson` | Genuine live face |
+| `fake_printed` | Printed photo attack |
+| `fake_screen` | Screen / digital photo replay |
+| `fake_mask` | Physical face mask |
+| `fake_mannequin` | 3D mannequin / doll |
+| `fake_unknown` | Other spoofing method |
+
+---
+
+## Architecture
 
 ```
 Input Image
     │
     ▼
-DINOv3 ConvNeXt-Large (frozen backbone)
-    │
+DINOv3 ConvNeXt-Large  ←  pretrained on 1.68B images (self-supervised)
+    │  fine-tuned end-to-end
     ▼
 Global Average Pooling  →  1536-dim embedding
     │
@@ -72,20 +64,20 @@ Classifier Head
 Logits (6 classes)
 ```
 
-**At inference**, Test-Time Augmentation (TTA) is applied:
-- 5 input scales: `[224, 256, 288, 320, 384]`
-- 2 spatial augmentations per scale: original + horizontal flip
-- **10 forward passes** per image, probabilities averaged
+**At inference** — Test-Time Augmentation (TTA):
+- 3 input scales × (original + H-flip) = **6 forward passes**, probabilities averaged
 
 ---
 
 ## Key Design Decisions
 
-- **Backbone**: `facebook/dinov3-convnext-large-pretrain-lvd1689m` — strong visual features from self-supervised pretraining on 1.68B images.
-- **Residual Adapter**: Preserves pretrained representations while allowing task-specific adaptation.
-- **Focal Loss** (γ=2): Handles class imbalance (realperson 324 vs fake_printed 85 samples).
-- **Data Cleaning**: 219 mislabeled images corrected via `misplaced_images.json`; 178 duplicates removed by MD5 hash.
-- **Domain Augmentation**: Custom transforms simulating spoofing artifacts — JPEG compression, pixelation, low-resolution blur, and Moiré patterns.
+| Decision | Why |
+|---|---|
+| **DINOv3 ConvNeXt-Large backbone** | Self-supervised pretraining on 1.68B images gives strong general visual features; ConvNeXt captures fine-grained local textures critical for spoofing detection |
+| **Residual Adapter** `x + 0.5·f(x)` | Allows task-specific adaptation without catastrophically forgetting pretrained features |
+| **Focal Loss** (γ=2, label smoothing=0.05) | Dataset is imbalanced (324 real vs 85 printed); focal loss down-weights easy examples |
+| **Domain augmentation** | Custom transforms simulate real spoofing artifacts: JPEG compression, pixelation, low-resolution blur, Moiré patterns |
+| **Data cleaning** | Found and corrected 219 mislabeled images via JSON manifest; removed 178 exact duplicates via MD5 hash |
 
 ---
 
@@ -94,106 +86,59 @@ Logits (6 classes)
 ```
 face-anti-spoofing-system/
 ├── notebooks/
-│   └── TheGacors.ipynb         # Full competition notebook (Kaggle)
+│   └── TheGacors.ipynb      # Full competition notebook (Kaggle-ready)
 ├── src/
-│   ├── model.py                # DINOv3ConvNeXtClassifier + FocalLoss
-│   ├── transforms.py           # Custom augmentation pipeline
-│   ├── dataset.py              # Data cleaning & deduplication
-│   ├── train.py                # Training CLI
-│   └── inference.py            # TTA inference CLI
+│   ├── model.py             # DINOv3ConvNeXtClassifier + FocalLoss
+│   ├── transforms.py        # Domain-specific augmentation pipeline
+│   ├── dataset.py           # Data cleaning & deduplication utilities
+│   ├── train.py             # Training CLI
+│   └── inference.py         # TTA inference CLI → submission.csv
 ├── app/
-│   ├── app.py                  # Gradio demo (HuggingFace Spaces)
-│   └── requirements.txt
+│   └── app.py               # Gradio demo (deployed on HuggingFace Spaces)
 ├── configs/
-│   └── config.yaml             # All hyperparameters
-├── misplaced_images.json       # Label correction manifest
-└── requirements.txt
+│   └── config.yaml          # All hyperparameters in one place
+└── misplaced_images.json    # Label correction manifest (219 fixes)
 ```
 
 ---
 
-## Setup
+## Quick Start
 
 ```bash
-git clone https://github.com/<your-username>/face-anti-spoofing-system
+git clone https://github.com/KevinJonathanR/face-anti-spoofing-system
 cd face-anti-spoofing-system
 pip install -r requirements.txt
 ```
 
-Set your HuggingFace token (required to download the private backbone checkpoint):
-
+**Train:**
 ```bash
-export HF_TOKEN="your_token_here"
-# or use: huggingface-cli login
-```
-
----
-
-## Training
-
-```bash
-# Configure paths in configs/config.yaml first
 python src/train.py --config configs/config.yaml
 ```
 
-Key hyperparameters (see `configs/config.yaml`):
-
-| Parameter | Value |
-|---|---|
-| Learning rate | 1e-5 |
-| Scheduler | Cosine |
-| Batch size | 32 |
-| Epochs | 10 (early stop patience=3) |
-| Weight decay | 0.02 |
-| FP16 | Yes |
-
----
-
-## Inference
-
+**Inference (competition submission):**
 ```bash
 python src/inference.py \
-    --model-path best_model.pth \
+    --model-path model_traced.pt \
     --test-dir data/test \
     --sample-sub samplesubmission.csv \
     --output submission.csv
 ```
 
----
-
-## Dataset
-
-The dataset is from the **FIND IT DAC UGM 2026** competition (private, not redistributable).
-
-Structure after preprocessing:
-
-```
-data/
-├── train_clean/
-│   ├── fake_mannequin/   (142 images)
-│   ├── fake_mask/        (209 images)
-│   ├── fake_printed/     (85 images)
-│   ├── fake_screen/      (155 images)
-│   ├── fake_unknown/     (264 images)
-│   └── realperson/       (324 images)
-└── test/                 (404 images)
+**Run demo locally:**
+```bash
+pip install -r app/requirements.txt
+python app/app.py
 ```
 
----
-
-## Dependencies
-
-| Library | Purpose |
-|---|---|
-| `transformers` | DINOv3 backbone + Trainer |
-| `datasets` | Efficient data loading |
-| `torch` / `torchvision` | Model training |
-| `gradio` | Demo interface |
-| `evaluate` | F1 & accuracy metrics |
-| `scikit-learn` | Confusion matrix |
+> **Note**: Competition dataset is private and not redistributable. Model weights available on the live demo.
 
 ---
 
 ## Team
 
 **Team The Gacors** — FIND IT DAC UGM 2026
+
+Team Member:
+1. Kevin Jonathan - Team Lead [@KevinJonathanR](https://github.com/KevinJonathanR)
+2. Faaris Khairrudin - Team Member [@FaarisKhairrudin](https://github.com/FaarisKhairrudin)
+3. Fauzan Ahsanudin - Team Member [@Fauzan-A25](https://github.com/Fauzan-A25)

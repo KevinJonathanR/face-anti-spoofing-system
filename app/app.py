@@ -124,14 +124,13 @@ demo = gr.Interface(
     fn=predict,
     inputs=gr.Image(type="pil", label="Upload Face Image"),
     outputs=gr.Label(num_top_classes=6, label="Prediction"),
-    title="Face Anti-Spoofing System",
+    title="Face Anti-Spoofing · Liveness Detection",
     description=(
-        "Upload a face image to detect whether it's a **real person** or a spoofing attack.\n\n"
-        "**Model**: DINOv3 ConvNeXt-Large + Custom Residual Adapter\n"
-        "**Classes**: Real Person · Mannequin · Mask · Printed Photo · Screen Replay · Unknown\n\n"
-        "Built for FIND IT DAC UGM 2026 | Team The Gacors\n\n"
-        "---\n"
-        "💡 *Click any example below to try it instantly. or you can upload your own image.*"
+        "Detects whether a face is **real** or a presentation attack "
+        "(printed photo, screen replay, mask, mannequin).\n\n"
+        "**Model** — DINOv3 ConvNeXt-Large · Focal Loss · Domain Augmentation\n\n"
+        "**96.6% accuracy · 96.1% macro F1** — FIND IT DAC UGM 2026 · Top 13 · Team The Gacors\n\n"
+        "💡 Click an example below or upload your own image."
     ),
     examples=available_examples if available_examples else None,
     example_labels=available_labels if available_labels else None,
